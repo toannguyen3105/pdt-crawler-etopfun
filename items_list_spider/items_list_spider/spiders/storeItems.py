@@ -33,9 +33,7 @@ class StoreitemsSpider(scrapy.Spider):
             }
 
         pager = response.json()['datas']['pager']
-        print(response.json()['datas']['pager'])
         current = pager['current']
-        print(current)
         pages = pager['pages']
         if current < pages:
             yield Request(

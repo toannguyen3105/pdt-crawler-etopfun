@@ -50,7 +50,7 @@ class StoreitemsSpider(scrapy.Spider):
         wb = Workbook()
         ws = wb.active
 
-        with open(csv_file, 'r') as f:
+        with open(csv_file, 'r', encoding='utf-8') as f:
             for row in csv.reader(f):
                 ws.append(row)
 

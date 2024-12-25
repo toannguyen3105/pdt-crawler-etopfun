@@ -98,5 +98,5 @@ RETRY_TIMES = 10
 RETRY_HTTP_CODES = [500, 503, 504, 400, 403, 404, 408]
 
 # Proxy list containing entries like
-PROXY_LIST = config('PROXY_PATH')
-PROXY_MODE = 0
+# PROXY_LIST = config('PROXY_PATH')
+# PROXY_MODE = 0
